@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ecoelectrónicos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  </head>
+  <body class="bg-light">
+    <header>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white fw-bold" href="#">Ecoelectrónicos</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white-50" href="#agendar">Agendar Retiro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white-50" href="#contact">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main>
+        <div class="container text-center">
+          <div class="m-4 p-5">
+            <h1 class="display-4 fw-bold">Bienvenido a ECO-ELECTRÓNICOS</h1>
+            <p class="lead">Somos una empresa dedicada al reciclaje responsable de artículos electrónicos. Ofrecemos un servicio de retiro a domicilio para facilitar el proceso y contribuir al cuidado del medio ambiente. Nuestro sistema te permite agendar retiros, consultar el estado de tus solicitudes y llevar un registro de los artículos que has reciclado.</p>
+          </div>
+        </div>
+        <!-- Sección de formulario -->
+        <section id="agendar" class="mb-5">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-header bg-success text-white">
+                            <h2 class="h4 mb-0">Agendar Retiro de Artículos Electrónicos</h2>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nombre_cliente" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre_cliente" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="direccion_cliente" class="form-label">Dirección</label>
+                                    <input type="text" class="form-control" id="direccion_cliente" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefono_cliente" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono_cliente" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="correo_cliente" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo_cliente" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="fecha_retiro" class="form-label">Fecha de Retiro</label>
+                                    <input type="date" class="form-control" id="fecha_retiro" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="hora_retiro" class="form-label">Hora de Retiro</label>
+                                    <input type="time" class="form-control" id="hora_retiro" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="articulos" class="form-label">Artículos a Reciclar</label>
+                                    <textarea class="form-control" id="articulos" rows="3" required></textarea>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-success">Agendar Retiro</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+              <!-- Tabla con datos estáticos -->
+        <section id="registros" class="container mb-5">
+          <div class="card shadow">
+            <div class="card-header bg-success text-white">
+              <h2 class="h4 mb-0">Registros de Reciclajes Realizados</h2>
+            </div>
+            <div class="card-body table-responsive">
+              <table class="table table-bordered table-striped align-middle">
+                <thead class="table-success">
+                  <tr>
+                    <th>ID Retiro</th>
+                    <th>Cliente</th>
+                    <th>Fecha</th>
+                    <th>Artículo</th>
+                    <th>Cantidad</th>
+                    <th>Vehículo Asignado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>María López</td>
+                    <td>2025-10-20</td>
+                    <td>Monitor LCD</td>
+                    <td>2</td>
+                    <td>Camión 3</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Pedro González</td>
+                    <td>2025-10-21</td>
+                    <td>CPU</td>
+                    <td>1</td>
+                    <td>Camioneta 2</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Ana Torres</td>
+                    <td>2025-10-22</td>
+                    <td>Impresora</td>
+                    <td>1</td>
+                    <td>Camión 1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+    <footer id="contact">
+        <div class="container text-center py-5 my-5">
+            <h2 class="display-4 fw-bold">¿Dudas o consultas?</h2>
+            <p class="lead">Contáctanos a través de nuestro correo electrónico o nuestras redes sociales</p>
+            <a href="mailto:contacto@recitronic.cl" class="lead text-decoration-none text-black">contacto@ecoelectronicos.cl</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+</body>
+</html>
